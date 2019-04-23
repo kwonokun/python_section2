@@ -4,6 +4,8 @@ import io
 sys.stdout = io.TextIOWrapper(sys.stdout.detach(), encoding = 'utf-8')
 sys.stderr = io.TextIOWrapper(sys.stderr.detach(), encoding = 'utf-8')
 
+print("ggggg")
+
 class UserInfo:
     def __init__(self, name, phone):
         self.name = name
@@ -16,7 +18,7 @@ class UserInfo:
         print("----------------")
 
     def __del__(self):
-        print("delete!!")    
+        print("delete!!")
 
 user1 = UserInfo("kim","010-2323-3333")
 user2 = UserInfo("kwon","010-2323-4444")
